@@ -18,7 +18,9 @@ public class Lab {
      * This also means that you should NOT write a try/catch block in this method, as the tests are expecting to have
      * a method thrown to it. A try/catch block would handle the exception within the method.
      */
-    public void mustThrow() {
+    public void mustThrow() throws ArrayIndexOutOfBoundsException {
+        int[] myArr = {1,5,2};
 
+        myArr[4] = 4;
     }
 }
